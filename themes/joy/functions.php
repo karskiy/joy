@@ -36,12 +36,12 @@ add_action('woocommerce_single_product_summary', function () {
     $link_o = get_field('ozon');
     ?>
     <?php if( $link_o ): ?>
-    <a class="button is-outline is-large" style="border-radius:99px;">
+    <a href="<?php echo esc_url( $link_o ); ?>" target="_blank" class="button is-outline is-large" style="border-radius:99px;">
         <img src="/wp-content/uploads/2022/04/ozon.png" width="180" alt="Логотип Озон">
     </a>
     <?php endif; ?>
     <?php if( $link_w ): ?>
-    <a class="button is-outline is-large" style="border-radius:99px;">
+    <a href="<?php echo esc_url( $link_w ); ?>" target="_blank" class="button is-outline is-large" style="border-radius:99px;">
         <img src="/wp-content/uploads/2022/04/wildberries.png" width="180" alt="Логотип Валдберрис">
     </a>
     <?php endif; ?>
